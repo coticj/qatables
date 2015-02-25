@@ -1,0 +1,50 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 77px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  background-color: #E9E9E9;
+}
+
+.container {
+  width: auto;
+  max-width: 1700px;
+  padding: 0 15px;
+}
+#buttons {
+	width: 380px;
+	padding: 6px;
+}
+
+.panel-body {
+	font-size: 80px;
+	
+}
+
+.btn-xl {
+	padding: 15px 22px;
+	font-size: 24px;
+	border-radius: 6px;
+	margin: 0 5px 0 5px;
+}
+
+.item {
+	float:left;
+	padding: 5px;
+}
+
+.image {
+	height: 185px;
+	width: 140px;
+}
