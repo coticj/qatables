@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 require_once '../rb.php';
-    R::setup('sqlite:../db/directory.db');
+    R::setup('sqlite:../db/qat.db');
 
 if (!empty($_POST)){
  

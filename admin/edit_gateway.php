@@ -1,6 +1,6 @@
 <?phpe
 require_once '../rb.php';
-    R::setup('sqlite:../db/directory.db');
+    R::setup('sqlite:../db/qat.db');
 
 if (!empty($_POST)){
 	$gateway = R::load( 'gateway', $_GET['id'] );

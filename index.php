@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 
 	require_once('header.html');
 	require_once 'rb.php';
-    R::setup('sqlite:./db/directory.db');
+    R::setup('sqlite:./db/qat.db');
 	$db = new SQLite3('./db/directory.db');
 	
 	

@@ -1,7 +1,7 @@
 <?php
 
 require_once '../rb.php';
-    R::setup('sqlite:../db/directory.db');
+    R::setup('sqlite:../db/qat.db');
 require_once("header.php");
 
 
