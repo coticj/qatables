@@ -48,3 +48,13 @@ body {
 	height: 185px;
 	width: 140px;
 }
+
+.owner {
+  background-color: rgba(165,165,165,0.7);
+  position: relative;
+  top: 32px;
+  height: 31px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}

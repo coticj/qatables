@@ -19,13 +19,18 @@ ini_set('display_errors', 1);
   <div class='row'>
     <div class='col-md-2'>
         <h3>Select gateway</h3>
-		
-		<?php
+
+        <select name="gateway">
+        	<option>-- Select a gateway --</option>
+		  <?php
 			$gateways = R::findAll( 'gateway' );
 			foreach($gateways as $gateway) {
-				echo '<div class="radio"><label><input type="radio" name="gateway" value="'.$gateway->id.'">'.$gateway->name.'</label></div>';
+				echo '<option value="'.$gateway->id.'">'.$gateway->name.'</option>';
 			}
 		?>
+		</select>
+		
+		
         
     </div>
       
@@ -35,7 +40,7 @@ ini_set('display_errors', 1);
 		<?php
 			$phones = R::findAll( 'phone' );
 			foreach($phones as $phone) {
-				echo '<div class="item"><img src="'.$phone->image.'" class="image img-responsive"><div class="checkbox"><label><input type="checkbox" name="phones[]" value="'.$phone->id.'">'.$phone->manufacturer.' '.$phone->model. '</label></div></div>';
+				echo '<div class="item"><div class="owner">Jure</div><label><img src="'.$phone->image.'" class="image img-responsive"><div class="checkbox"><input type="checkbox" name="phones[]" value="'.$phone->id.'">'.$phone->manufacturer.' '.$phone->model. '</label></div></div>';
 			}
 		?>
 		<div style="clear: both;"></div>

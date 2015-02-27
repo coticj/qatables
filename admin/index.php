@@ -4,6 +4,10 @@ require_once '../rb.php';
     R::setup('sqlite:../db/qat.db');
 require_once("header.php");
 
+function getGWOwner($gwid) {
+    $gwip = R::load( 'gateway', $gwid);
+    return $gwip->name;
+}
 
 ?>
 
@@ -45,7 +49,7 @@ require_once("header.php");
 				echo '</td>';
 
 				echo '<td>';
-					echo $phone->usedgw;
+					echo getGWOwner($phone->usedgw);
 				echo '</td>';
 				
 				echo '<td>';
