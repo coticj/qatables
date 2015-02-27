@@ -18,6 +18,7 @@ require_once("header.php");
 				<th>Model</th>
 				<th>IP</th>
 				<th>MAC</th>
+				<th>Current GW</th>
 				<th>Edit</th>
 			</tr>
 		</thead>
@@ -41,6 +42,10 @@ require_once("header.php");
 				
 				echo '<td>';
 					echo $phone->mac;
+				echo '</td>';
+
+				echo '<td>';
+					echo $phone->usedgw;
 				echo '</td>';
 				
 				echo '<td>';

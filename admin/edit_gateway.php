@@ -1,4 +1,4 @@
-<?phpe
+<?php
 require_once '../rb.php';
     R::setup('sqlite:../db/qat.db');
 
