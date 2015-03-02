@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
 <div class="container-fluid">
   <div class="page-header">
 	<div class="pull-right"><p class="lead"><a href="admin/">Admin</a></p></div>
-	<h1>QATables</h1>
+	<h1>QATables1</h1>
   </div>
   <form id="phones">
   <div class='row'>

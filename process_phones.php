@@ -41,9 +41,9 @@ fwrite($iptables_file, "COMMIT\n");
 
 fclose($iptables_file);
 
-/*
-$output = shell_exec('sudo ./reload_iptables.sh');
-*/
+
+$output = shell_exec('./reload_iptables.sh');
+
 
 function getGWip($gwid) {
     $gwip = R::load( 'gateway', $gwid);
